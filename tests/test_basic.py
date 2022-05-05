@@ -78,4 +78,4 @@ class TestBasicStuff(unittest.TestCase):
 
         # Print to file.
         for i in pbrange(n, fname=".test-log.txt"):
-            pass
+            time.sleep(s)

@@ -53,5 +53,12 @@ for i in pbrange(10, fname="file.txt"):
     time.sleep(s)
 ```
 
+## Sample output
+```python
+for _ in pbrange(10000000):
+   pass
+
+# [2022-05-05 17:42:52 | 10000000/10000000 (100%) | WALL: 0:00:06 | ETA: 0:00:00 | 1654133.26it/s]
+```
 
 [ci-status-img]: https://github.com/luiarthur/pbar-py/workflows/CI/badge.svg
