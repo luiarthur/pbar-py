@@ -85,7 +85,7 @@ class pbar:
             print(f"[{self.bar}]", end="\r", flush=True)
         elif toc - self.tic > self.min_interval or self.i == self.iters:
             elapsed = toc - self.genesis
-            speed = f"{self.i / elapsed:.2f}" if self.i > 0 else "???"
+            speed = f"{self.i / elapsed:.2f}" if (self.i > 0 and elapsed > 0) else "???"
             wall = timedelta(seconds=elapsed)
             eta = wall * (self.iters / self.i - 1)
             perc = int(100 * self.i / self.iters)
