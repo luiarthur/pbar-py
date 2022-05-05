@@ -75,3 +75,7 @@ class TestBasicStuff(unittest.TestCase):
         x = [i + 1 for i in pbrange(N)]
         assert x[0] == 1 and x[-1] == N
         assert list(range(5)) == list(pbrange(5))
+
+        # Print to file.
+        for i in pbrange(n, fname=".test-log.txt"):
+            pass
